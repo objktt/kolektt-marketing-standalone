@@ -72,10 +72,10 @@ export default function IndexPage({
                 />
               </div> */}
 
-            <div className="mx-auto w-4/5 px-4 sm:px-6 lg:px-8 py-32 lg:py-40 relative z-[2]">
+            <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 py-32 lg:py-40 relative z-[2]">
               <div className="flex justify-center">
-                <div className="w-full lg:w-2/3 text-center">
-                  <h1 className="text-5xl lg:text-6xl xl:text-9xl font-bold text-gray-900 leading-tight mb-6">
+                <div className="w-full text-center">
+                  <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-gray-900 leading-tight mb-6">
                     All your collections begin here.
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-700 mb-12">
