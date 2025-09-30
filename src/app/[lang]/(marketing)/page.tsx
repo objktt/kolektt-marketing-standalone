@@ -4,7 +4,6 @@ import Link from "next/link";
 import Script from "next/script";
 import { use, useState } from "react";
 import type { Locale } from "@/config/i18n-config";
-import ParticleBackground from "@/components/ParticleBackground";
 import { Iphone15Pro } from "@/components/ui/iphone-15-pro";
 import Testimonials from "@/components/ui/testimonials";
 import KolekttPricing from "@/components/ui/kolektt-pricing";
@@ -47,7 +46,6 @@ export default function IndexPage({
   
   return (
     <>
-      <ParticleBackground />
       {/* Hero & Demo Container */}
       <div id="hero-demo-container" className="relative pt-20">
 
