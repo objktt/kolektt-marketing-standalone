@@ -83,7 +83,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter text-center text-black">
+          <h2 className="text-4xl lg:text-5xl font-bold tracking-tighter text-center text-black">
             Amazing!
           </h2>
           <p className="text-center mt-5 opacity-75 text-uppercase text-black">

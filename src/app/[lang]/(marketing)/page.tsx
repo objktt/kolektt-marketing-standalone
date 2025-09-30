@@ -167,7 +167,7 @@ export default function IndexPage({
                 <div className="w-full lg:w-1/2">
                   <div className="lg:pr-12">
                     <div className="mb-8">
-                      <h2 className="text-4xl lg:text-5xl xl:text-9xl font-bold text-white mb-4">
+                      <h2 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white mb-4">
                         Snap
                       </h2>
                     </div>
@@ -426,7 +426,7 @@ export default function IndexPage({
                 <div className="w-full lg:w-1/2 lg:order-last">
                   <div className="lg:pl-12">
                     <div className="mb-8">
-                      <h2 className="text-4xl lg:text-5xl xl:text-9xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-gray-900 mb-4">
                         Collect
                       </h2>
                     </div>
@@ -685,7 +685,7 @@ export default function IndexPage({
                 <div className="w-full lg:w-1/2">
                   <div className="lg:pr-12">
                     <div className="mb-8">
-                      <h2 className="text-4xl lg:text-5xl xl:text-9xl font-bold text-white mb-4">
+                      <h2 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white mb-4">
                         Trade
                       </h2>
                     </div>
