@@ -74,7 +74,7 @@ export default function BpmCollectPage({
                       <div className="flex flex-col md:flex-row justify-center lg:justify-start items-center lg:items-start gap-5 mt-4">
                         <button
                           type="button"
-                          className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                          className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function BpmCollectPage({
 
                         <button
                           type="button"
-                          className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                          className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -620,7 +620,7 @@ export default function BpmCollectPage({
                     href="https://apps.apple.com/app/bpm-collect"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                    className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -649,7 +649,7 @@ export default function BpmCollectPage({
                     href="https://play.google.com/store/apps/details?id=com.kolektt.bpmcollect"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                    className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

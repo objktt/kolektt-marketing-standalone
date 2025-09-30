@@ -76,18 +76,17 @@ export default function IndexPage({
               <div className="flex justify-center">
                 <div className="w-full text-center">
                   <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-gray-900 leading-tight mb-6">
-                    All your collections begin here.
+                    All your<br />collections<br />begin here.
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-700 mb-12">
-                    Smart platform for analog collectors. Easily collect,
-                    manage, and trade your collection with camera-based
-                    automatic recognition, metadata collection, and investment
-                    insights.
+                    Smart platform for analog collectors.<br />
+                    Easily collect, manage, and trade your collection<br />
+                    with camera-based automatic recognition, metadata collection, and investment insights.
                   </p>
                   <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-4">
                     <button
                       type="button"
-                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +112,7 @@ export default function IndexPage({
 
                     <button
                       type="button"
-                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1147,7 +1146,7 @@ export default function IndexPage({
                   <div className="flex flex-col md:flex-row justify-center items-center gap-5">
                     <button
                       type="button"
-                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1173,7 +1172,7 @@ export default function IndexPage({
 
                     <button
                       type="button"
-                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-4 rounded-lg border-none min-w-[200px]"
+                      className="flex items-center text-white bg-black hover:bg-gray-800 transition-colors px-6 py-3 rounded-lg border-none min-w-[200px]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
