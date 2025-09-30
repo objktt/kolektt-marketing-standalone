@@ -1,0 +1,37 @@
+/* Homepage specific styles */
+html.homepage,
+html.homepage body {
+  background: #000 !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.homepage .main-page-wrapper,
+.homepage div.main-page-wrapper {
+  background: #000 !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Override any white background classes on homepage */
+.homepage .bg-white,
+.homepage .bg-white.text-dark,
+.homepage .bg-white.text-dark.min-h-screen {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Keep content sections with their intended backgrounds */
+.homepage .bg-nine,
+.homepage .bg-grey,
+.homepage .bg-ten {
+  background: #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+}
+
+.homepage .bg-black {
+  background: #000 !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Kolektt, collect, collection, vinyl, record, analog, collecting, BPM Collect, Kolektt Hub, metadata, AI recognition, trading, community">
+	<meta name="description" content="Kolektt is a smart platform for analog collectors. Easily collect, manage, and trade your collection with camera-based automatic recognition, metadata collection, and investment insights.">
+    <meta property="og:site_name" content="Kolektt">
+    <meta property="og:url" content="http://localhost:8080/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kolektt — All your collections begin here.">
+	<meta property='og:description' content='Kolektt is a smart platform for analog collectors. Easily collect, manage, and trade your collection with camera-based automatic recognition, metadata collection, and investment insights.'>
+	<meta name='og:image' content='images/assets/ogg.png'>
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- For Window Tab Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#0D1A1C">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#0D1A1C">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
+	<title>Kolektt — All your collections begin here.</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/custom.css" media="all">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+
+	<!-- Inline CSS for iPhone Mockup with Image Swiper -->
+	<style>
+		/* Remove old iPhone 16 Pro styles and use new iPhone mockup styles from style.css */
+	</style>
+
+<!-- Fix Internet Explorer ______________________________________-->
+<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="main-page-wrapper">
+		<!-- ===================================================
+			Loading Transition
+		==================================================== -->
+		<div id="preloader">
+			<div id="ctn-preloader" class="ctn-preloader">
+				<div class="icon"><img src="images/loader.svg" alt="" class="m-auto d-block"> <span></span></div>
+				<div class="txt-loading">
+					<span data-text-preloader="P" class="letters-loading">
+						P
+					</span>
+					<span data-text-preloader="I" class="letters-loading">
+						I
+					</span>
+					<span data-text-preloader="K" class="letters-loading">
+						K
+					</span>
+					<span data-text-preloader="U" class="letters-loading">
+						U
+					</span>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<!-- 
+		=============================================
+			Theme Main Menu
+		============================================== 
+		-->
+		<header class="theme-main-menu menu-style-five dark-vr sticky-menu menu-overlay">
+			<div class="inner-content gap-three">
+				<div class="top-header position-relative">
+					<div class="d-flex align-items-center justify-content-between">
+						<div class="logo order-lg-0 me-lg-5">
+							<a href="index.html" class="d-flex align-items-center">
+								<span style="font-weight:800;font-size:22px;letter-spacing:0.5px;color:#000;">Kolektt</span>
+							</a>
+						</div>
+						<!-- logo -->
+						<div class="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
+							<a href="/en/hub" class="btn-global-header" data-event="enter_hub_click">Enter Hub</a>
+						</div>
+						<nav class="navbar navbar-expand-lg p0 mx-lg-auto order-lg-2">
+							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav align-items-lg-center">
+									<li class="d-block d-lg-none"><div class="logo"><a href="index.html" class="d-block"><span style="font-weight:800;font-size:22px;letter-spacing:0.5px;color:#000;">Kolektt</span></a></div></li>
+									<li class="nav-item"><a class="nav-link" href="/en/bpm-collect">BPM Collect</a></li>
+									<li class="nav-item"><a class="nav-link" href="/en/hub">Kolektt Hub</a></li>
+									<li class="nav-item"><a class="nav-link" href="/en/about">About</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div> <!--/.top-header-->
+			</div> <!-- /.inner-content -->
+		</header> 
+		<!-- /.theme-main-menu -->
+
+		<!-- 
+		=============================================
+			Hero & Demo Container
+		============================================== 
+		-->
+		<div id="hero-demo-container" class="hero-demo-wrapper position-relative">
+			<div id="ball" style="position: absolute; width: 20px; height: 20px; background: linear-gradient(135deg, #8A42FF 0%, #6B2FE8 100%); border-radius: 50%; z-index: 10; box-shadow: 0 10px 30px rgba(138, 66, 255, 0.4);"></div>
+			<div id="square" style="position: absolute; width: 18px; height: 18px; background: linear-gradient(135deg, #FF6B42 0%, #E82F6B 100%); z-index: 10; box-shadow: 0 10px 30px rgba(255, 107, 66, 0.4);"></div>
+			
+			<!-- 
+			=============================================
+				Hero Banner
+			============================================== 
+			-->
+			<div id="hero" class="hero-banner-four p-30 z-1 position-relative" style="padding-bottom:0;">
+				<div class="bg-eight wrapper position-relative">
+	                <div id="hero-three" class="hero-three-canvas" aria-hidden="true"></div>
+	                <div class="container">
+	                    <div class="row justify-content-center">
+	                        <div class="col-12 col-lg-8 mx-auto text-center">
+	                            <h1 class="hero-heading color-dark font-Playfair wow fadeInUp">All your collections begin here.</h1>
+	                            <p class="fs-28 text-dark pt-15 pb-35 md-pb-20 wow fadeInUp" data-wow-delay="0.1s">Piku delivered blazing performance, fast striking word soludtion</p>
+	                            <div class="store-buttons d-flex justify-content-center flex-wrap gap-3 wow fadeInUp" data-wow-delay="0.2s">
+	                                <!-- Store buttons: replace image icons with Phosphor icons -->
+	                                <a href="https://apps.apple.com/app" target="_blank" rel="noopener" class="btn btn-dark d-inline-flex align-items-center px-4 py-3">
+	                                    <i class="ph ph-apple-logo me-2" style="font-size:20px;"></i>
+	                                    <span>Download on the App Store</span>
+	                                </a>
+	                                <a href="https://play.google.com/store" target="_blank" rel="noopener" class="btn btn-outline-dark d-inline-flex align-items-center px-4 py-3">
+	                                    <i class="ph ph-google-play-logo me-2" style="font-size:20px;"></i>
+	                                    <span>Get it on Google Play</span>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+
+						<!-- client logos removed -->
+	                </div>
+	            </div>
+			</div>
+			<!-- /.hero-banner-four -->
+			
+			<!--
+			=====================================================
+				Kolektt Intro
+			=====================================================
+			-->
+			<section id="demo" class="block-feature-intro p-30 pb-60 demo" style="padding-top:0;">
+				<div class="bg-eight pt-90 lg-pt-60 pb-120 lg-pb-80 md-pb-80 sm-pb-70">
+	                <div id="demo-three" class="demo-three-canvas"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xxl-10 m-auto">
+								<div class="text-center">
+									<div class="mockup-phone-container mt-50 wow fadeInUp" data-wow-delay="0.15s">
+										<div class="iphone-mockup">
+											<div class="iphone-screen">
+												<div class="iphone-notch"></div>
+												<div class="swiper-overlay" id="demo-swiper"></div>
+												
+												<!-- Album Info Text Area -->
+												<div class="album-info-display" id="albumInfoDisplay" style="display: none;">
+													<div class="album-info-container">
+														<div class="album-info-content">
+															<div class="info-item">
+																<span class="info-label">Artist:</span>
+																<span class="info-value" id="albumArtist">Unknown Artist</span>
+															</div>
+															<div class="info-item">
+																<span class="info-label">Album:</span>
+																<span class="info-value" id="albumName">Unknown Album</span>
+															</div>
+															<div class="info-item">
+																<span class="info-label">Genre:</span>
+																<span class="info-value" id="albumGenre">Unknown Genre</span>
+															</div>
+															<div class="info-item">
+																<span class="info-label">Year:</span>
+																<span class="info-value" id="albumYear">Unknown Year</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<!-- Shutter Button UI -->
+												<div class="shutter-button-container">
+													<button class="shutter-button" onclick="handleShutterClick()">
+														<div class="shutter-inner">
+															<div class="shutter-ring"></div>
+														</div>
+													</button>
+												</div>
+												
+												<div class="iphone-home-indicator"></div>
+											</div>
+										</div>
+									</div>
+
+									<h2 class="wow fadeInUp mt-40" style="color:#000;">All your collections in one place.</h2>
+									<p class="fs-20 mt-15 mb-0 wow fadeInUp" data-wow-delay="0.05s" style="color:#000;">A simple introduction text placeholder. We'll replace it with your desired copy later.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- /.hero-demo-wrapper -->
+
+		<!--
+		=====================================================
+			BLock Feature Twelve
+		=====================================================
+		-->
+		<div class="block-feature-twelve pt-130 lg-pt-80">
+			<div class="container">
+                <div class="text-center mb-85 lg-mb-40">
+					<div class="title-six">
+					<h2>Kolektt Core Features</h2>
+				</div>
+				<p class="fs-24 mb-25">"With Kolektt, collecting becomes easier."</p>
+					<ul class="rating d-flex justify-content-center align-items-center flex-wrap style-none">
+						<li><i class="ph-fill ph-star"></i></li>
+						<li><i class="ph-fill ph-star"></i></li>
+						<li><i class="ph-fill ph-star"></i></li>
+						<li><i class="ph-fill ph-star"></i></li>
+						<li><i class="ph-fill ph-star"></i></li>
+						<li><span><strong>5.00</strong> (27k Reviews)</span></li>
+					</ul>
+				</div>
+
+				<div class="row">
+					<div class="col-xxl-10 m-auto">
+						<div class="row g-4 justify-content-center">
+							<div class="col-md-6 col-lg-4">
+								<div class="card-style-six text-center border-line">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<picture>
+											<source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f933_1f3fb/512.webp" type="image/webp">
+											<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f933_1f3fb/512.gif" alt="🤳" width="128" height="128">
+										</picture>
+									</div>
+									<h4>Snap</h4>
+									<p class="fs-24">Easy registration with album photography</p>
+								</div>
+								<!-- /.card-style-six -->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="card-style-six text-center border-line">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_17.svg" alt="">
+									</div>
+									<h4>Collect</h4>
+									<p class="fs-24">Systematic collection management</p>
+								</div>
+								<!-- /.card-style-six -->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="card-style-six text-center">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<img src="images/icon/smile.svg" alt="">
+									</div>
+									<h4>Trade</h4>
+									<p class="fs-24">Exchange with other collectors</p>
+								</div>
+								<!-- /.card-style-six -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.block-feature-twelve -->
+
+
+
+        <!--
+		=====================================================
+			BLock Feature Thirteen
+		=====================================================
+		-->
+		<div class="block-feature-thirteen p-30 mt-150 xl-mt-120 lg-mt-60">
+			<div class="bg-nine pt-130 lg-pt-80 pb-100 lg-pb-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 order-lg-last">
+							<div class="ms-lg-5 ps-xxl-3">
+								<div class="title-six">
+									<h2 class="color-dark">Smart technology for analog collectors</h2>
+								</div>
+	
+								<div class="accordion accordion-style-three mb-40" id="accordionThree">
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+												Smart Recognition Engine
+											</button>
+										  </h2>
+										  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionThree">
+											<div class="accordion-body">
+												<p class="fs-22 color-dark">Computer vision and ML instantly identify album covers via camera, automatically matching artist, release year, tracklist, and pressing info with 95%+ accuracy, including rare editions.</p>
+											</div>
+										  </div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Metadata Collection System
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+											<div class="accordion-body">
+												<p class="fs-22 color-dark">Continuously collects record data through user behaviors - registration, ratings, trading. Real-time updates on condition, quality, rarity, and market prices build the world's most accurate vinyl database.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+												AI Investment Advisor
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+											<div class="accordion-body">
+												<p class="fs-22 color-dark">Analyzes your collection patterns to recommend investment-worthy records. Considers market trends, price volatility, and rarity to grow asset value. Beta users saw 23% collection value increase in 6 months.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="faq-v1.html" class="btn-seven style-two">Explore More <i class="ph ph-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-10 m-auto order-lg-first">
+							<div class="media position-relative mt-60">
+								<div class="counter-box text-center d-inline-block box-one">
+									<h2 class="color-dark">31,000+</h2>
+									<p class="fs-24 text-dark">Reviews</p>
+								</div>
+								<div class="counter-box text-center d-inline-block box-two">
+									<h2 class="color-dark">1.2m</h2>
+									<p class="fs-24 text-dark">Clients</p>
+								</div>
+								<img src="images/assets/ils_18.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.block-feature-thirteen -->
+
+		<!--
+		=====================================================
+			BLock Feature Fourteen
+		=====================================================
+		-->
+		<div class="block-feature-fourteen position-relative z-1 mt-150 lg-mt-70">
+			<div class="container">
+                <div class="row">
+					<div class="col-xxl-9 col-xl-8 col-lg-10 m-auto">
+						<div class="text-center mb-80 lg-mb-40">
+							<div class="title-six">
+								<h2>Complete your collection ecosystem</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feature-tab">
+					<div class="row g-4">
+						<div class="col-lg-6">
+							<div class="bg-grey border-30 p-30 h-100 ecosystem-tile">
+								<div class="card-style-six border-line p-4 h-100 position-relative">
+									<div class="d-flex align-items-center mb-3">
+										<h3 class="m-0">BPM Collect</h3>
+									</div>
+									<div class="ecosystem-media">
+										<img src="images/assets/bg_13.svg" alt="BPM Collect placeholder">
+									</div>
+									<p class="fs-22 mb-3">From record registration to management with camera-based automatic recognition.</p>
+									<a href="/bpm-collect" class="btn-twelve"><span>Go to BPM Collect</span> <i class="ph ph-arrow-right"></i></a>
+									<a href="/bpm-collect" class="stretched-link" aria-label="BPM Collect"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="bg-grey border-30 p-30 h-100 ecosystem-tile">
+							<div class="card-style-six border-line p-4 h-100 position-relative">
+									<div class="d-flex align-items-center mb-3">
+										<h3 class="m-0">Kolektt Hub</h3>
+									</div>
+									<div class="ecosystem-media">
+										<img src="images/assets/bg_15.svg" alt="Kolektt Hub placeholder">
+									</div>
+									<p class="fs-22 mb-3">Community, trading, and insights all in one place.</p>
+									<a href="/hub" class="btn-twelve"><span>Go to Kolektt Hub</span> <i class="ph ph-arrow-right"></i></a>
+									<a href="/hub" class="stretched-link" aria-label="Kolektt Hub"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.feature-tab -->
+			</div>
+		</div>
+		<!-- /.block-feature-fourteen -->
+
+
+
+		<!--
+		=====================================================
+			Feedback Section Four
+		=====================================================
+		-->
+		<div class="feedback-section-four p-30 mt-150 xl-mt-130 lg-mt-80">
+			<div class="bg-ten pt-130 lg-pt-80 pb-130 lg-pb-80">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 order-lg-last">
+							<div class="ms-xl-5 ms-lg-4 ps-xxl-3">
+								<div class="title mb-60 lg-mb-30">
+										<h2 class="color-dark">Amazing!</h2>
+										<p class="fs-24 text-uppercase text-dark">Kolektt Beta Feedback</p>
+									</div>
+								<div class="feedback-slider-three">
+									<div class="item">
+										<div class="feedback-block-three">
+											<blockquote>Registration complete with just album photography. My unorganized collection was sorted in just one day.</blockquote>
+
+											<div class="client-info fs-22 text-dark"><span>Hyunjun Yu,</span> Seoul</div>
+										</div>
+										<!-- /.feedback-block-three -->
+									</div>
+									<div class="item">
+										<div class="feedback-block-three">
+											<blockquote>Market prices and grades are automatically attached, making it easy to time trades. During beta, I sold rare records at good prices.</blockquote>
+
+											<div class="client-info fs-22 text-dark"><span>Minji Park,</span> Busan</div>
+										</div>
+										<!-- /.feedback-block-three -->
+									</div>
+									<div class="item">
+										<div class="feedback-block-three">
+											<blockquote>The recommendation feature accurately captures my taste. The joy of collecting has come alive again.</blockquote>
+
+											<div class="client-info fs-22 text-dark"><span>Junghoon Lee,</span> Daegu</div>
+										</div>
+										<!-- /.feedback-block-three -->
+									</div>
+								</div>
+								<ul class="rating d-flex align-items-center flex-wrap style-none mt-70 md-mt-40">
+									<li><i class="ph-fill ph-star"></i></li>
+									<li><i class="ph-fill ph-star"></i></li>
+									<li><i class="ph-fill ph-star"></i></li>
+									<li><i class="ph-fill ph-star"></i></li>
+									<li><i class="ph-fill ph-star"></i></li>
+									<li><span><strong>4.9</strong> (Beta 1.2k Reviews)</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6 order-lg-first">
+							<div class="media position-relative md-mt-40">
+								<img src="images/assets/ils_19.png" alt="">
+								<div class="card-wrapper d-flex align-items-center">
+									<img src="images/media/img_14.png" alt="" class="h-100">
+									<div class="ps-4">
+										<h2 class="color-dark">32,0000+</h2>
+										<p class="fs-24 text-dark m0">Total Clients</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.feedback-section-four -->
+
+
+
+
+		<!--
+		=====================================================
+			Pricing Section Three
+		=====================================================
+		-->
+		<div class="pricing-section-three position-relative z-1 mt-150 xl-mt-120 lg-mt-80">
+			<div class="container">
+				<div class="row align-items-end">
+					<div class="col-lg-7">
+						<div class="title-six text-center text-lg-start">
+							<h2>Transparent pricing, Select plan</h2>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="d-flex justify-content-center justify-content-lg-end">
+							<nav class="pricing-nav-two d-flex justify-content-center mb-35 md-mb-10 md-mt-30">
+								<div class="nav nav-tabs" role="tablist">
+									<button class="nav-link active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+									<button class="nav-link" id="yearly-tab" data-bs-toggle="tab" data-bs-target="#yearly" type="button" role="tab" aria-controls="yearly" aria-selected="false">Yearly</button>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab-content mt-30 md-mt-10">
+					<div class="tab-pane show active" id="monthly" role="tabpanel" aria-labelledby="buy-tab" tabindex="0">
+						<div class="row gx-xxl-5">
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Standard</div>
+										<strong class="price fw-500 d-block">0</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>1 Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>3gb Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_20.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Gold</div>
+										<strong class="price fw-500 d-block"><sup>$</sup>7</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>3 Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>10gb Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_21.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Diamond</div>
+										<strong class="price fw-500 d-block"><sup>$</sup>9</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>Unlimited Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>Unlimited Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_22.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="yearly" role="tabpanel" aria-labelledby="rent-tab" tabindex="0">
+						<div class="row gx-xxl-5">
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Standard</div>
+										<strong class="price fw-500 d-block">0</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>1 Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>3gb Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_20.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Gold</div>
+										<strong class="price fw-500 d-block"><sup>$</sup>27</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>3 Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>10gb Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_21.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+							<div class="col-lg-4">
+								<div class="pr-column">
+									<div class="pr-header text-center">
+										<div class="plan text-uppercase">Diamond</div>
+										<strong class="price fw-500 d-block"><sup>$</sup>39</strong>
+									</div>
+									<!-- /.pr-header -->
+									<ul class="style-none text-center">
+										<li>Unlimited Domain</li>
+										<li>1 Year Premium Support</li>
+										<li>Unlimited Hosting</li>
+									</ul>
+									<a href="#" class="btn-eight mt-50 mb-50">Get Started</a>
+									<div class="illustration d-flex align-items-center justify-content-center">
+										<img src="images/assets/ils_22.png" alt="">
+									</div>
+								</div>
+								<!-- /.pr-column -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.tab-content -->
+			</div>
+
+		</div>
+		<!-- /.pricing-section-three -->
+
+
+
+
+		<!-- App Integration Available section removed -->
+
+
+
+
+		<!-- FAQ section removed -->
+
+
+
+
+		<!--
+		=====================================================
+			Fancy Banner Four
+		=====================================================
+		-->
+		<div class="fancy-banner-four p-30 mt-110 lg-mt-60">
+			<div class="bg-eight text-center pt-100 lg-pt-70 pb-250">
+				<div class="container">
+					<div class="position-relative z-1">
+						<div class="row">
+							<div class="col-xl-9 col-lg-8 m-auto">
+								<div class="title-six mb-40">
+									<h2 class="color-dark">700k+ Customers have our Piku. Try it Now!</h2>
+								</div>
+								<a href="#" class="btn-seven style-two">Get Started</a>
+							</div>
+						</div>
+						<img src="images/shape/shape_41.svg" alt="" class="shapes shape_01">
+						<img src="images/shape/shape_42.svg" alt="" class="shapes shape_02">
+					</div>
+				</div>
+				
+			</div>
+			<img src="images/assets/ils_23.png" alt="" class="position-relative z-1 illustration">
+		</div>
+		<!-- /.fancy-banner-four -->
+
+
+	
+
+
+		<!--
+		=====================================================
+			Footer Three
+		=====================================================
+		-->
+		<div class="footer-three version-two">
+			<div class="container">
+				<div class="position-relative">
+					<div class="row">
+						<div class="col-xxl-5 col-lg-4 me-auto">
+							<div class="footer-intro mb-30 me-xxl-5 pe-xxl-4">
+								<h3>Subscribe to Kolektt <span>Newsletter</span>.</h3>
+								<form action="#" class="position-relative">
+									<input type="email" placeholder="Enter your email address">
+									<button class="tran3s"><i class="ph ph-paper-plane-right ms-auto"></i></button>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-2 col-6">
+							<div class="footer-nav mb-40">
+								<ul class="footer-nav-link style-none">
+									<li><a href="about-us-v1.html">About </a></li>
+									<li><a href="project-v2.html">Work Gallery</a></li>
+									<li><a href="pricing-v2.html">Pricing</a></li>
+									<li><a href="blog-v2.html">Blog</a></li>
+									<li><a href="contact-v2.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-2 col-6">
+							<div class="footer-nav mb-40">
+								<ul class="footer-nav-link style-none">
+									<li><a href="faq-v1.html">Faq’s</a></li>
+									<li><a href="faq-v2.html">Privacy Policy</a></li>
+									<li><a href="faq-v1.html">Terms</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xxl-2 col-lg-3">
+							<div class="footer-contact mb-20">
+								<p class="fw-500">210 Wallent Street, California, Main OC, USA</p>
+								<a href="#" class="tel fw-500 tran3s">(+91) 0187 34 377</a>
+								<ul class="style-none d-flex align-items-center social-icon">
+									<li><a href="#"><i class="ph-fill ph-facebook-logo"></i></a></li>
+									<li><a href="#"><i class="ph-fill ph-twitter-logo"></i></a></li>
+									<li><a href="#"><i class="ph-fill ph-instagram-logo"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="container">
+				<div class="bottom-footer">
+					<div class="d-md-flex align-items-center justify-content-start">
+						<p class="copyright-text m0"><span>@2025 Objktt Studio.</span> All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.footer-three -->
+
+
+
+
+		<button class="scroll-top">
+			<i class="ph ph-arrow-up"></i>
+		</button>
+
+
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+		<!-- jQuery first, then Bootstrap JS -->
+		<!-- jQuery -->
+		<script src="vendor/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- WOW js -->
+		<script src="vendor/wow/wow.min.js"></script>
+		<!-- Slick Slider -->
+		<script src="vendor/slick/slick.min.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/fancybox.umd.js"></script>
+		<!-- Lazy -->
+		<script src="vendor/jquery.lazy.min.js"></script>
+		<!-- js Counter -->
+		<script src="vendor/jquery.counterup.min.js"></script>
+		<script src="vendor/jquery.waypoints.min.js"></script>
+		<!-- validator js -->
+		<script src="vendor/validator.js"></script>
+		<!-- iPhone Mockup and Image Swiper Components -->
+		<script src="components/iphone-15-pro.js"></script>
+		<script src="components/image-swiper.js"></script>
+
+		<!-- three.js & scroll libs -->
+		<script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		<script>
+		console.log('Three.js script starting...');
+		(function(){
+		  console.log('Checking for hero-three container...');
+		  var container = document.getElementById('hero-three');
+		  console.log('Container found:', !!container);
+		  console.log('THREE available:', !!window.THREE);
+		  console.log('GSAP available:', !!window.gsap);
+		  
+		  if(!container || !window.THREE || !window.gsap) {
+		    console.error('Missing dependencies:', {
+		      container: !!container,
+		      THREE: !!window.THREE,
+		      gsap: !!window.gsap
+		    });
+		    return;
+		  }
+		  
+		  console.log('Initializing Three.js scene...');
+		  var scene = new THREE.Scene();
+		  var renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+		  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, 2));
+		  renderer.setClearColor(0x000000, 0.1);  // Add slight background color for rendering confirmation
+		  renderer.domElement.style.position = 'fixed';
+		  renderer.domElement.style.top = '0';
+		  renderer.domElement.style.left = '0';
+		  renderer.domElement.style.width = '100vw';
+		  renderer.domElement.style.height = '100vh';
+		  renderer.domElement.style.pointerEvents = 'none';
+		  renderer.domElement.style.zIndex = '10'; // Increase z-index to show above hero section
+		  document.body.appendChild(renderer.domElement);
+		  console.log('Renderer added to DOM');
+		  
+		  var camera;
+		  var square, circle; var vw=window.innerWidth, vh=window.innerHeight, swapProgress=0;
+		  var ambient = new THREE.AmbientLight(0xffffff, 1.2); scene.add(ambient);  // Increase ambient light brightness
+		  var dir = new THREE.DirectionalLight(0xffffff, 0.8); dir.position.set(0.3,1,0.6); scene.add(dir);  // Increase directional light brightness
+		  console.log('Lights added to scene');
+
+		  function makeMeshes(size){
+		    console.log('Creating meshes with size:', size);
+		    var r = size*0.5;
+		    var circleGeo = new THREE.CircleGeometry(r, 64);
+		    var squareGeo = new THREE.PlaneGeometry(size, size);
+		    // Change to more visible material - bright and clear
+		    var circleMat = new THREE.MeshStandardMaterial({
+		      color: 0x6C5CE7, 
+		      transparent: false,  // Remove transparency
+		      roughness: 0.3, 
+		      metalness: 0.1,
+		      envMapIntensity: 1.0
+		    });
+		    var squareMat = new THREE.MeshStandardMaterial({
+		      color: 0x00D1B2, 
+		      transparent: false,  // Remove transparency
+		      roughness: 0.3, 
+		      metalness: 0.1,
+		      envMapIntensity: 1.0
+		    });
+		    circle = new THREE.Mesh(circleGeo, circleMat);
+		    square = new THREE.Mesh(squareGeo, squareMat);
+		    
+		    // Larger size and clear position settings
+		    var leftX = -3, rightX = 3;  // Use fixed 3D coordinates
+		    circle.position.set(leftX, 0, 0);  // Circle on the left
+		    square.position.set(rightX, 0, 0); // Square on the right
+		    square.rotation.z = Math.PI/4 * 0.15; // slight tilt like hero
+		    
+		    scene.add(circle); 
+		    scene.add(square);
+		    console.log('Meshes created and added to scene:', {
+		      circle: !!circle,
+		      square: !!square,
+		      circlePosition: circle.position,
+		      squarePosition: square.position,
+		      circleSize: r,
+		      squareSize: size
+		    });
+		    
+		    // Camera settings - closer position for better visibility
+		    camera = new THREE.PerspectiveCamera(75, vw/vh, 0.1, 1000);
+		    camera.position.set(0, 0, 5);  // Closer to objects
+		  }
+
+		  function disposeMeshes(){
+		    if(circle){ scene.remove(circle); circle.geometry.dispose(); circle.material.dispose(); circle=null; }
+		    if(square){ scene.remove(square); square.geometry.dispose(); square.material.dispose(); square=null; }
+		  }
+
+		  function setupCamera(w,h){
+		    console.log('Setting up camera with dimensions:', w, h);
+		    // Change to PerspectiveCamera for more natural 3D view
+		    camera = new THREE.PerspectiveCamera(75, vw/vh, 0.1, 1000);
+		    camera.position.set(0, 0, 10);  // Move back 10 units on z-axis
+		    console.log('Camera created:', !!camera, 'Position:', camera.position);
+		  }
+
+  function placeShapes(p){
+    if(!circle || !square) {
+      console.warn('Shapes not available for placement:', {circle: !!circle, square: !!square});
+      return;
+    }
+    
+    console.log('Placing shapes with progress:', p);
+    
+    // Apply smooth easing function
+		    function easeInOutCubic(t) {
+		      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+		    }
+		    
+		    // In hero section: move from off-screen to center
+		    // In core feature section: move from center to both sides
+		    var startLeftX = -vw*0.8, startRightX = vw*0.8;  // Initial position (off-screen)
+		    var centerX = 0;  // Center position
+		    var endLeftX = -vw*0.8, endRightX = vw*0.8;  // Final position (move to both sides)
+    
+    if(p <= 0.5) {
+      // First stage: from off-screen to center (hero section)
+		      var progress = easeInOutCubic(p * 2);  // Convert 0-0.5 to 0-1 and apply easing
+      circle.position.x = startLeftX + (centerX - startLeftX) * progress;
+      square.position.x = startRightX + (centerX - startRightX) * progress;
+    } else {
+      // Second stage: from center to both sides (core feature section)
+		      var progress = easeInOutCubic((p - 0.5) * 2);  // Convert 0.5-1 to 0-1 and apply easing
+      circle.position.x = centerX + (endLeftX - centerX) * progress;
+      square.position.x = centerX + (endRightX - centerX) * progress;
+    }
+    
+    console.log('Shapes positioned:', {
+      circleX: circle.position.x,
+      squareX: square.position.x,
+      progress: p
+    });
+  }
+
+  function resize(){
+    vw = window.innerWidth; vh = window.innerHeight;
+    renderer.setSize(vw,vh,false);
+    setupCamera(vw,vh);
+    var size = Math.max(60, Math.min(180, Math.min(vw,vh)*0.18));
+    disposeMeshes();
+    makeMeshes(size);
+    // Call placement function only after shapes are created
+    if(circle && square) {
+      placeShapes(swapProgress);
+    }
+    renderer.render(scene, camera);
+    console.log('Three.js resize - size:', size, 'vw:', vw, 'vh:', vh, 'circle:', !!circle, 'square:', !!square);  // Add debugging log
+  }
+
+		  function animate(){
+		    requestAnimationFrame(animate);
+		    if (circle && square) {
+		      var time = Date.now() * 0.001;  // Current time in seconds
+		      
+		      // Floating animation - vertical movement
+		      circle.position.y = Math.sin(time * 0.8) * 0.3;
+		      square.position.y = Math.cos(time * 0.6) * 0.2;
+		      
+		      // Rotation animation
+		      circle.rotation.z += 0.005;
+		      square.rotation.z += 0.003;
+		    }
+		    renderer.render(scene, camera);
+		    // Log only on first render
+		    if(!animate.logged) {
+		      console.log('Animation loop running, rendering scene');
+		      animate.logged = true;
+		    }
+		  }
+		  
+		  // Scroll-based animation - shape morphing effect
+		  function updateShapes() {
+		    if (!circle || !square) return;
+		    
+		    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+		    var maxScroll = document.body.scrollHeight - window.innerHeight;
+		    var scrollProgress = Math.min(scrollY / maxScroll, 1);  // 0 to 1
+		  }
+
+		  // ScrollTrigger to drive swapProgress across both sections
+		  if(window.gsap && typeof ScrollTrigger!=='undefined'){
+		    gsap.registerPlugin(ScrollTrigger);
+		    
+		    // Unified ScrollTrigger to handle both sections continuously
+		    ScrollTrigger.create({
+		      trigger: '#hero',
+		      start: 'top bottom',
+		      end: '#demo bottom top',
+		      scrub: true,
+		      onUpdate: function(self){ 
+		        swapProgress = self.progress; 
+		        placeShapes(swapProgress); 
+		      }
+		    });
+		  }
+
+		  window.addEventListener('resize', resize);
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', function(){ 
+      setupCamera(vw, vh);
+      var size = Math.max(100, Math.min(vw, vh) * 0.3);  // Set to larger size
+      console.log('Initial setup - vw:', vw, 'vh:', vh, 'size:', size);
+      makeMeshes(size);  // Create shapes first
+      placeShapes(0);    // Place at initial position (progress = 0)
+      resize(); animate(); 
+      
+      // Initialize iPhone Mockup with Image Swiper
+      initializeMockupSwiper();
+    });
+  } else {
+    setupCamera(vw, vh);
+    var size = Math.max(100, Math.min(vw, vh) * 0.3);
+    console.log('Document ready - vw:', vw, 'vh:', vh, 'size:', size);
+    makeMeshes(size);
+    placeShapes(0);
+    resize(); animate();
+    
+    // Initialize iPhone Mockup with Image Swiper
+    initializeMockupSwiper();
+  }
+
+  // Initialize iPhone Mockup with Image Swiper
+  function initializeMockupSwiper() {
+    // Initialize demo section swiper
+    const demoSwiperContainer = document.getElementById('demo-swiper');
+    if (demoSwiperContainer) {
+      const imageUrls = "images/albums/the-beatles-sgt-pepper-s-lonely-hearts-club-band-1967.webp,images/albums/pink-floyd-the-dark-side-of-the-moon-1973.webp,images/albums/nirvana-nevermind-1991.webp,images/albums/michael-jackson-dangerous-1991.webp,images/albums/daft-punk-random-access-memories-2013.webp,images/albums/kendrick-lamar-to-pimp-a-butterfly-2015.webp";
+      
+      try {
+        const demoSwiper = new ImageSwiper({
+          images: imageUrls,
+          cardWidth: 252,
+          cardHeight: 252,
+          className: 'demo-swiper-instance'
+        });
+        
+        demoSwiper.render(demoSwiperContainer);
+        console.log('Demo swiper rendered successfully with new images');
+      } catch (error) {
+        console.error('Error creating demo ImageSwiper:', error);
+      }
+    } else {
+      console.error('demo-swiper container not found');
+    }
+  }
+
+  // Shutter button click handler - make it globally accessible
+  window.handleShutterClick = function() {
+    console.log('Shutter button clicked!');
+    
+    // Add visual feedback
+    const shutterButton = document.querySelector('.shutter-button');
+    if (shutterButton) {
+      shutterButton.style.transform = 'scale(0.9)';
+      setTimeout(() => {
+        shutterButton.style.transform = 'scale(1)';
+      }, 150);
+    }
+    
+    // Add flash effect
+    const flashOverlay = document.createElement('div');
+    flashOverlay.style.cssText = `
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 20;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    `;
+    
+    const iphoneScreen = document.querySelector('.iphone-screen');
+    if (iphoneScreen) {
+      iphoneScreen.appendChild(flashOverlay);
+      setTimeout(() => {
+        flashOverlay.style.opacity = '0';
+        setTimeout(() => {
+          if (flashOverlay.parentNode) {
+            flashOverlay.parentNode.removeChild(flashOverlay);
+          }
+        }, 300);
+      }, 100);
+    }
+    
+    // Show album info text after flash effect
+    setTimeout(() => {
+      showAlbumInfoText();
+    }, 400);
+  }
+  
+  // Show album info text with current top album info
+  window.showAlbumInfoText = function() {
+    const albumInfoDisplay = document.getElementById('albumInfoDisplay');
+    
+    if (albumInfoDisplay) {
+      console.log('Album info display found, showing info...');
+      
+      // Get current top album info
+      const currentAlbumInfo = getCurrentTopAlbumInfo();
+      console.log('Current album info:', currentAlbumInfo);
+      
+      // Update album info text content
+      updateAlbumInfoText(currentAlbumInfo);
+      
+      // Show album info text with proper display
+      albumInfoDisplay.style.display = 'block';
+      albumInfoDisplay.style.opacity = '1';
+      console.log('Album info display shown');
+      
+      // Hide after 3 seconds
+      setTimeout(() => {
+        albumInfoDisplay.style.opacity = '0';
+        setTimeout(() => {
+          albumInfoDisplay.style.display = 'none';
+        }, 300);
+      }, 3000);
+    } else {
+      console.log('Album info display not found!');
+    }
+  }
+  
+  // Get current top album information
+  function getCurrentTopAlbumInfo() {
+    console.log('Getting current top album info...');
+    
+    // Try to get the currently visible/active card from the swiper
+    let topCard = document.querySelector('.demo-swiper-instance .image-card.active');
+    console.log('Active card:', topCard);
+    
+    // If no active card, get the first visible card
+    if (!topCard) {
+      topCard = document.querySelector('.demo-swiper-instance .image-card:first-child');
+      console.log('First child card:', topCard);
+    }
+    
+    // If still no card, try to get any visible card
+    if (!topCard) {
+      const allCards = document.querySelectorAll('.demo-swiper-instance .image-card');
+      console.log('All cards found:', allCards.length);
+      if (allCards.length > 0) {
+        // Find the card that's most centered/visible
+        topCard = allCards[0]; // Default to first card
+        console.log('Using first available card:', topCard);
+      }
+    }
+    
+    if (topCard) {
+      const img = topCard.querySelector('img');
+      const imgSrc = img ? img.src : '';
+      console.log('Image source:', imgSrc);
+      
+      // Extract album info from image filename
+      const albumInfo = getAlbumInfoFromFilename(imgSrc);
+      console.log('Album info result:', albumInfo);
+      return albumInfo;
+    }
+    
+    console.log('No card found, returning default');
+    // Default album info if no card found
+    return {
+      title: "앨범을 찾을 수 없습니다",
+      description: "현재 표시할 앨범 정보가 없습니다.",
+      image: "images/albums/default.jpg",
+      date: "알 수 없음",
+      count: "0장"
+    };
+  }
+  
+  // Extract album information from filename
+  function getAlbumInfoFromFilename(imageSrc) {
+    console.log('Getting album info from:', imageSrc);
+    
+    const filename = imageSrc.split('/').pop().replace('.webp', '');
+    console.log('Extracted filename:', filename);
+    
+    const parts = filename.split('-');
+    console.log('Filename parts:', parts);
+    
+    // Parse different album formats
+    if (filename.includes('the-beatles-sgt-pepper')) {
+      console.log('Matched: The Beatles');
+      return {
+        title: "Sgt. Pepper's Lonely Hearts Club Band",
+        artist: "The Beatles",
+        genre: "Rock",
+        year: "1967",
+        image: imageSrc
+      };
+    } else if (filename.includes('pink-floyd-the-dark-side')) {
+      console.log('Matched: Pink Floyd');
+      return {
+        title: "The Dark Side of the Moon",
+        artist: "Pink Floyd",
+        genre: "Progressive Rock",
+        year: "1973",
+        image: imageSrc
+      };
+    } else if (filename.includes('nirvana-nevermind')) {
+      console.log('Matched: Nirvana');
+      return {
+        title: "Nevermind",
+        artist: "Nirvana",
+        genre: "Grunge",
+        year: "1991",
+        image: imageSrc
+      };
+    } else if (filename.includes('michael-jackson-dangerous')) {
+      console.log('Matched: Michael Jackson');
+      return {
+        title: "Dangerous",
+        artist: "Michael Jackson",
+        genre: "Pop",
+        year: "1991",
+        image: imageSrc
+      };
+    } else if (filename.includes('daft-punk-random-access')) {
+      console.log('Matched: Daft Punk');
+      return {
+        title: "Random Access Memories",
+        artist: "Daft Punk",
+        genre: "Electronic",
+        year: "2013",
+        image: imageSrc
+      };
+    } else if (filename.includes('kendrick-lamar-to-pimp')) {
+      console.log('Matched: Kendrick Lamar');
+      return {
+        title: "To Pimp a Butterfly",
+        artist: "Kendrick Lamar",
+        genre: "Hip Hop",
+        year: "2015",
+        image: imageSrc
+      };
+    }
+    
+    console.log('No match found, returning default');
+    // Default album info if no match found
+    return {
+      title: "Unknown Album",
+      artist: "Unknown Artist",
+      genre: "Unknown Genre",
+      year: "Unknown Year",
+      image: imageSrc
+    };
+  }
+  
+  // Update album info text content
+  function updateAlbumInfoText(albumInfo) {
+    console.log('Updating album info text with:', albumInfo);
+    
+    const infoArtist = document.getElementById('albumArtist');
+    const infoAlbumName = document.getElementById('albumName');
+    const infoGenre = document.getElementById('albumGenre');
+    const infoYear = document.getElementById('albumYear');
+    
+    console.log('Found elements:', {
+      artist: infoArtist,
+      album: infoAlbumName,
+      genre: infoGenre,
+      year: infoYear
+    });
+    
+    if (infoArtist) infoArtist.textContent = albumInfo.artist || 'Unknown Artist';
+    if (infoAlbumName) infoAlbumName.textContent = albumInfo.title || 'Unknown Album';
+    if (infoGenre) infoGenre.textContent = albumInfo.genre || 'Unknown Genre';
+    if (infoYear) infoYear.textContent = albumInfo.year || 'Unknown Year';
+    
+    console.log('Updated text content');
+  }
+		})();
+		(function(){
+		  var container = document.getElementById('demo-three');
+		  if(!container) return;
+		  // demo-three only serves a visual role, actual shapes are handled by hero-three overlay
+		})();
+		</script>
+
+		</div> <!-- /.main-page-wrapper -->
+
+</body>
+
+</html>

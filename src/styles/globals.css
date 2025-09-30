@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0deg 0% 100%;
+    --foreground: 222.2deg 47.4% 11.2%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+
+    --card: 0deg 0% 100%;
+    --card-foreground: 222.2deg 47.4% 11.2%;
+
+    --primary: 222.2deg 47.4% 11.2%;
+    --primary-foreground: 210deg 40% 98%;
+
+    --secondary: 210deg 40% 96.1%;
+    --secondary-foreground: 222.2deg 47.4% 11.2%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0deg 100% 50%;
+    --destructive-foreground: 210deg 40% 98%;
+
+    --ring: 215deg 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    /* --background: 224 71% 4%; */
+    --foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  .container {
+    @apply max-sm:px-4;
+  }
+
+  /* Force white header with blur and transparency */
+  .force-white-header {
+    /* Background and border are handled by inline styles for dynamic transparency */
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    color: #111827 !important;
+  }
+
+  .force-white-header * {
+    color: inherit !important;
+  }
+
+  /* Responsive header margin variables to match section padding */
+  :root {
+    --header-margin: 1rem; /* 16px for mobile */
+  }
+
+  @media (min-width: 576px) {
+    :root {
+      --header-margin: 1.25rem; /* 20px for small screens */
+    }
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --header-margin: 1.875rem; /* 30px for tablets and up */
+    }
+  }
+
+  /* Header container - no margin, positioning handled by header element */
+  .header-container {
+    color: #111827;
+  }
+  
+  .header-inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  /* Match Bootstrap container + p-30 padding */
+  @media (min-width: 576px) {
+    .header-inner {
+      max-width: 540px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header-inner {
+      max-width: 720px;
+      padding-left: 1.875rem; /* 30px */
+      padding-right: 1.875rem; /* 30px */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .header-inner {
+      max-width: 960px;
+      padding-left: 1.875rem; /* 30px */
+      padding-right: 1.875rem; /* 30px */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .header-inner {
+      max-width: 1140px;
+      padding-left: 1.875rem; /* 30px */
+      padding-right: 1.875rem; /* 30px */
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .header-inner {
+      max-width: 1320px;
+      padding-left: 1.875rem; /* 30px */
+      padding-right: 1.875rem; /* 30px */
+    }
+  }
+}
