@@ -71,7 +71,27 @@ body { color:#000; }
 */
 
 /* Header tweaks */
-.theme-main-menu .nav-link { font-weight:600; }
+.theme-main-menu .nav-link { 
+  font-weight:600; 
+  position: relative;
+  padding-bottom: 8px;
+}
+.theme-main-menu .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: #000;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+.theme-main-menu .nav-link:hover::after,
+.theme-main-menu .nav-link.active::after {
+  width: 100%;
+}
 .theme-main-menu .btn-global-header { background:#000; color:#fff; padding:8px 14px; border-radius:999px; text-decoration:none; font-weight:700; border:1px solid #000; }
 .theme-main-menu .btn-global-header:hover { filter:brightness(1.05); }
 
